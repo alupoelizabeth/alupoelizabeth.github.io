@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies | Alupo Elizabeth</title>
+    <style>
+        /* CSS VARIABLES & RESET */
+        :root {
+            --maroon: #800000;
+            --light-blue: #e3f2fd;
+            --light-green: #f1f8e9;
+            --white: #ffffff;
+            --text-gray: #444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-blue);
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            background-color: var(--maroon);
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: var(--light-green);
+        }
+
+        /* MAIN CONTENT SECTION */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            min-height: 80vh;
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
+            gap: 50px;
+        }
+
+        .content-left {
+            flex: 1;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .content-left h1 {
+            color: var(--maroon);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--maroon);
+            padding-left: 15px;
+        }
+
+        .content-left p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* HOBBIES LIST */
+        .hobbies-list {
+            list-style: none;
+        }
+
+        .hobbies-list li {
+            background: var(--white);
+            margin-bottom: 12px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            transition: 0.3s;
+            border-left: 0px solid var(--maroon);
+        }
+
+        .hobbies-list li:hover {
+            transform: translateX(10px);
+            border-left: 8px solid var(--maroon);
+            background-color: var(--light-green);
+        }
+
+        .hobbies-list li::before {
+            content: "✓";
+            color: var(--maroon);
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        /* IMAGE SECTION */
+        .image-right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            animation: fadeInRight 1.2s ease-out;
+        }
+
+        .image-right img {
+            width: 400px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: -20px 20px 0px var(--maroon);
+            border: 10px solid var(--white);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--maroon);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* ANIMATIONS */
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 900px) {
+            .container { flex-direction: column; text-align: center; padding: 40px 5%; }
+            .image-right { justify-content: center; }
+            .image-right img { width: 100%; max-width: 300px; box-shadow: 10px 10px 0px var(--maroon); }
+            .content-left h1 { border-left: none; border-bottom: 5px solid var(--maroon); padding-bottom: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MY LIFESTYLE</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="mybusiness.html">Business</a>
+            <a href="hobies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="content-left">
+            <h1>My Hobbies</h1>
+            <p>These are the things I love doing in my free time to stay inspired and energized:</p>
+            
+            <ul class="hobbies-list">
+                <li>Watching Movies</li>
+                <li>Playing on the Computer</li>
+                <li>Touring and Traveling</li>
+                <li>Reading</li>
+                <li>Developing Web Skills</li>
+            </ul>
+        </div>
+
+        <div class="image-right">
+            <img src="swim.jpg" alt="Leisure and Lifestyle">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alupo Elizabeth. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

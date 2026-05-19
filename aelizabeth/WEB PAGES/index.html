@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alupo Elizabeth | Portfolio</title>
+    <style>
+        /* CSS VARIABLES & RESET */
+        :root {
+            --maroon: #800000;
+            --light-blue: #e3f2fd;
+            --light-green: #f1f8e9;
+            --white: #ffffff;
+            --text-gray: #444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-blue);
+            color: var(--text-gray);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            background-color: var(--maroon);
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: var(--light-green);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            min-height: 85vh;
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
+            gap: 50px;
+        }
+
+        .content-left {
+            flex: 1;
+            animation: fadeInSimple 1.2s ease-out;
+        }
+
+        .content-left h2 {
+            color: var(--maroon);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .content-left h1 {
+            font-size: 3.5rem;
+            color: #222;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .content-left p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+
+        .image-right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            animation: slideInRight 1.2s ease-out;
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .image-container img {
+            width: 380px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 25px 25px 0px var(--maroon);
+            border: 10px solid var(--white);
+            transition: transform 0.4s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.03);
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--maroon);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(128, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #5a0000;
+            transform: translateY(-3px);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--maroon);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeInSimple {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 40px;
+            }
+            .content-left p { margin: 0 auto 30px; }
+            .image-right { justify-content: center; }
+            .image-container img { width: 300px; box-shadow: 15px 15px 0px var(--maroon); }
+            .content-left h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ALUPO ELIZABETH</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="mybusiness.html">Business</a>
+            <a href="hobies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="content-left">
+            <font size="600"><h2>HELLO UGANDA</h2></font>
+            <marquee><h2>WELLCOME TO HOME PAGE</h2></marquee>
+            <h1>I am Alupo Elizabeth</h1>
+            <h2>PERSONAL PROFILE</h2>
+            <p>
+                A highly motivated project manager with over five years of experience leading cross-functional<br>
+                teams in the tech industry. proven ability to deliver complex projects on time and within budget,<br>
+                with afocus on streamlining processes to improve efficiency. Seeking to leverage expertise in agile<br>
+                methodologies to drive success at adynamic,innovative company.
+            </p>
+            <a href="mybusiness.html" class="btn">Explore My Business</a>
+        </div>
+
+        <div class="image-right">
+            <div class="image-container">
+                <img src="pic.jpg" alt="Alupo Elizabeth">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alupo Elizabeth. All rights reserved.</p>
+        <p>Registered Nurse & Tech Professional</p>
+    </footer>
+
+</body>
+</html>

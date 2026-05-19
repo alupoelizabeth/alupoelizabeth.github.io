@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Alupo Elizabeth</title>
+    <style>
+        :root {
+            --maroon: #800000;
+            --light-blue: #e3f2fd;
+            --light-green: #f1f8e9;
+            --white: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--light-blue); line-height: 1.6; }
+        
+        header { background-color: var(--maroon); padding: 1.5rem 10%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: var(--white); font-size: 1.5rem; font-weight: bold; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-size: 0.9rem; text-transform: uppercase; }
+
+        .container { display: flex; align-items: flex-start; padding: 80px 10%; gap: 50px; animation: fadeIn 1s ease-out; }
+        .content-left { flex: 1.5; }
+        .image-right { flex: 0.5; }
+        .image-right img { width: 100%; border-radius: 15px; border: 5px solid var(--maroon); box-shadow: 10px 10px 0 var(--light-green); }
+
+        h1 { color: var(--maroon); margin-bottom: 30px; border-bottom: 3px solid var(--maroon); display: inline-block; }
+        
+        table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        th { background-color: var(--maroon); color: white; padding: 15px; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #eee; }
+        tr:hover { background-color: var(--light-green); }
+
+        footer { background-color: var(--maroon); color: var(--white); text-align: center; padding: 30px; margin-top: 50px; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Education page</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="mybusiness.html">Business</a>
+            <a href="hobies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="content-left">
+            <h1>Education Background</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>School/University</th>
+                        <th>Award / Qualification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Metropolitan International University</td>
+                        <td>Diploma In Computer Science</td>
+                    </tr>
+                    <tr>
+                        <td>Kumi University</td>
+                        <td>Certificate In Information Technology</td>
+                    </tr>
+                    <tr>
+                        <td>Ngora Girls Secondary School</td>
+                        <td>Uganda Certificate of Education (U.C.E)</td>
+                    </tr>
+                    <tr>
+                        <td>Kumi Girls Primary School</td>
+                        <td>Primary Leaving Examination (P.L.E)</td>
+                    </tr>
+                </body>
+            </table>
+        </div>
+        <div class="image-right">
+            <img src="smc.jpg" alt="Graduation Photo">
+        </div>
+    </main>
+    <footer><p>&copy; 2026 Alupo Elizabeth. All rights reserved.</p></footer>
+</body>
+</html>
