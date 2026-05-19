@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business | Five Stars Stationary</title>
+    <style>
+        :root { --maroon: #800000; --light-blue: #e3f2fd; --light-green: #f1f8e9; --white: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--light-green); }
+        header { background-color: var(--maroon); padding: 1.5rem 10%; display: flex; justify-content: space-between; }
+        .logo { color: var(--white); font-size: 1.5rem; font-weight: bold; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; text-transform: uppercase; }
+
+        .container { display: flex; align-items: center; padding: 80px 10%; gap: 60px; animation: slideIn 1.2s ease-out; }
+        .content-left { flex: 1.2; text-align: left; }
+        .image-right { flex: 0.8; text-align: right; }
+        .image-right img { width: 350px; border-radius: 25px; border: 8px solid var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+
+        h1 { color: var(--maroon); font-size: 2.5rem; margin-bottom: 10px; }
+        .location { font-style: italic; color: #555; margin-bottom: 25px; }
+        
+        .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; list-style: none; margin-top: 20px; }
+        .services-grid li { background: var(--white); padding: 10px; border-left: 4px solid var(--maroon); border-radius: 4px; font-weight: 500; }
+
+        footer { background-color: var(--maroon); color: var(--white); text-align: center; padding: 30px; }
+        @keyframes slideIn { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ABOUT US</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="mybusiness.html">Business</a>
+            <a href="hobies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="content-left">
+            <h1>Five Stars Stationary</h1>
+            <p class="location">Namungoona Parish, Kampala District</p>
+            <p></h2>We provide high-quality office and computer services to the community.</h2></p>
+            <table border="1">
+                <tr>
+                <th>services category</th><th>what to Highlight</th>
+                </tr>
+                <tr>
+                    <td>internet & workspace</td><td>high speed browsing per hour<br>typing/typesetting services -1000 per page<br>research assistance100,000</td>
+                </tr>
+                <tr>
+                    <td>Printing & publishing</td><td>Bulk printing<br>(Black & White-500 per page, color-1000)<br>Scanning to email-1000<br>USB photo coping-500<Laminating-3000<br>Spiro binding-2000></td>
+                </tr>
+                <tr>
+                    <td>Creative & Digital</td><td>basic graphic design layout-3000<br>Official document formation-2000<br>passport photos-5000 express</td>
+                </tr>
+                <tr>
+                    <td>Stationary Supplies</td><td>pens- 15,000 @box<br>notebooks-2,000@<br>folders-2,000@<br>Evelops available on site-5,000@ apacket<br></td>
+                </tr>
+                </table>
+        </div>
+        <div class="image-right">
+            <img src="computer.jpg" alt="Stationary Shop Office">
+        </div>
+    </main>
+    <footer><p>&copy; 2026 Alupo Elizabeth. All rights reserved.</p>
+        <h2>CONTACT US ON:+256 779441518 OR +256 761081926<h2>
+    </footer>
+</body>
+</html>
